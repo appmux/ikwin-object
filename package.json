@@ -1,0 +1,34 @@
+{
+  "name": "ikwin-object",
+  "version": "1.0.0",
+  "description": "IKWIN object.",
+  "directories": {
+    "lib": "./lib"
+  },
+  "main": "./lib/ikwin-object.js",
+  "scripts": {
+    "build": "npm run prepublish",
+    "prepublish": "node_modules/babel-cli/bin/babel.js src --out-dir lib",
+    "test": "npm run build && mocha test/ikwin-object.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/appmux/ikwin-object.git"
+  },
+  "keywords": [
+    "ikwin",
+    "ikwin-object"
+  ],
+  "author": "Alexander Korzh (appmux)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/appmux/ikwin-object/issues"
+  },
+  "homepage": "https://github.com/appmux/ikwin-object#readme",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "mocha": "^3.4.2"
+  }
+}
